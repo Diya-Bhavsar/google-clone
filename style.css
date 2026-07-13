@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/**header**/
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 56px;
+    gap: 25px;
+    margin-right: 25px;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    margin-top: 1rem;
+    color: #1f1f1f;
+}
+
+/**middle-part**/
+
+.google{
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 7rem;
+    color: #8E4767;
+    padding-top: 56px;
+    font-family: sans-serif;
+    font-weight: 500;
+    border: 20x solid #8E4767 ;
+}
+
+.input{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    height: 50px;
+    width: 800px;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 23%;
+    border: 2px solid grey;
+    border-top-left-radius:50px ;
+    border-bottom-left-radius:50px ;
+    border-top-right-radius:50px ;
+    border-bottom-right-radius:50px ;
+    
+}
+
+.mp-search{
+    font-size: 20px;
+    margin-left: 20px;
+    color: #1f1f1f;
+}
+.mp-input{
+    width:60%;
+    color: #000000;
+    font-size: 1rem;
+    border: none;
+}
+.mp-i1{
+    color: #000000;
+    font-size: 20px;
+    width: 1rem;
+}
+.mp-i2{
+    color: #000000;
+    font-size: 20px;
+}
+.mp-i3{
+    display: flex;
+    background-color: #f3f5f6;
+    color: #1f1f1f;
+    font-size: 16px;
+    margin-right: 20px;
+    border-top: 3px solid white ;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.hehe{
+    position: relative;
+    height: 36px;
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f3f5f6;
+    border-radius: 25px;
+
+    overflow: hidden;
+}
+
+.hehe::before{
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    background: conic-gradient(
+        aqua,
+        red,
+        yellow,
+        green,
+        aqua
+    );
+
+    animation: spin 3s ease-in infinite;
+    opacity: 0;
+}
+
+.hehe::after{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #f3f5f6;
+    border-radius: 25px;
+}
+
+.hehe p{
+    position: relative;
+    z-index: 1;
+}
+
+.hehe:hover::before{
+    opacity: 1;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.option{
+    display: flex;
+    justify-content: center;
+    margin-top:20px ;
+}
+
+.out:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+.out{
+    height: 112px;
+    width: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.out p{
+    margin-top: 5px;
+}
+.emj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   
+}
+
+.b1{
+    background-image: url(whatsapp.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.b2{
+    background-image: url(YOUTUBE.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.b3{
+    background-image: url(chess.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.b4{
+    background-image: url(google.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.b5{
+    background-image: url(crome.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.b6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    height: 50px;
+    width: 50px;
+}
+
+/**last pannel**/
+
+.last-pannel{
+    height: 35px;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color:#ffd9e5;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
